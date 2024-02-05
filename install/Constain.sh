@@ -1,5 +1,5 @@
 #!/bin/bash
-export DIR_DATABASE_IP=/usr/local/UnknownAD/databaseIP.json
+export DIR_DATABASE_IP=/root/databaseIP.json
 export ALLOW_COUNTRY="Vietnam"
 export ALLOW_ASN="24086,7643,18403"
 
@@ -10,7 +10,7 @@ setVariablesSystem() {
     touch ~/.constainUAD
     chmod 777 ~/.constainUAD
     cat >~/.constainUAD <<EOF
-export DIR_DATABASE_IP=/usr/local/UnknownAD/databaseIP.json
+export DIR_DATABASE_IP=/root/databaseIP.json
 export ALLOW_COUNTRY='Vietnam'
 export ALLOW_ASN='24086,7643,18403'
 EOF
