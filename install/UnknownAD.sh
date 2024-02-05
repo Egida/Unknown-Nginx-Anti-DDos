@@ -51,7 +51,6 @@ StartApp() {
   echo ''
   read -p "----------------> ENTER NUMBER ACTION : " NUMBER_ACTION
   echo ""
-  RunAppAction
 }
 
 killApt
@@ -59,7 +58,7 @@ killApt
 while [ $NUMBER_ACTION -ne 0 ]; do
 
   if [[ $NUMBER_ACTION -eq -1 ]]; then
-    RunAppAction
+    StartApp
     else
       RunAction
   fi
