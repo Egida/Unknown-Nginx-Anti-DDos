@@ -13,7 +13,6 @@ runAntiDDos(){
     done
   UpdateFireWall;
   fi
-  textMagenta "----------------> CONFIG SUCCESS"
 }
 
 SetAllowIP(){
