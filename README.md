@@ -10,7 +10,7 @@ Install command
 
 1. [ ] Step 1
 
-   `git clone https://github.com/EvilUnknown/Unknown-Nginx-Anti-DDos.git && cd Unknown-Nginx-Anti-DDos && bash install.sh
+   `cd /root && git clone https://github.com/EvilUnknown/Unknown-Nginx-Anti-DDos.git && cd Unknown-Nginx-Anti-DDos && bash install.sh
    `
 2. [ ] Step 2
 
