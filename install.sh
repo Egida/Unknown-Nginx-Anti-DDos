@@ -21,7 +21,7 @@ cp -rf install/* /usr/local/UnknownDDOS &> /dev/null
 
 chmod -R +x /usr/local/UnknownDDOS  &> /dev/null
 
-ln -s /usr/local/unknownDDOS/UnknownDDOS.sh /usr/local/bin/UnknownDDOS &> /dev/null
+ln -s /usr/local/UnknownDDOS/UnknownDDOS.sh /usr/local/bin/UnknownDDOS &> /dev/null
 
 cd ../ || exit
 
