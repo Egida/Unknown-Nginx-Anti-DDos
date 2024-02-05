@@ -21,8 +21,12 @@ UpdateUnknownAD() {
 }
 
 killApt() {
-  sudo killall apt apt-get &>/dev/null
-  sudo rm /var/lib/apt/lists/lock &>/dev/null
-  sudo rm /var/cache/apt/archives/lock &>/dev/null
-  sudo rm /var/lib/dpkg/lock* &>/dev/null
+  sudo killall apt apt-get &>/dev/null;
+  sudo rm /var/lib/apt/lists/lock &>/dev/null;
+  sudo rm /var/cache/apt/archives/lock &>/dev/null;
+  sudo rm /var/lib/dpkg/lock* &>/dev/null;
+  sudo ufw enable &> /dev/null;
+  sudo ufw allow ssh &> /dev/null;
+  sudo ufw allow http &> /dev/null;
+  sudo ufw allow https &> /dev/null;
 }
