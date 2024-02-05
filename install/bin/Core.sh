@@ -29,10 +29,12 @@ killApt() {
 enableUFW(){
     textGreen "----------------> ENABLE FIREWALL";
     sudo ufw enable;
+    textMagenta "----------------> CONFIG SUCCESS"
 }
 statusUFW(){
   textGreen "----------------> STATUS FIREWALL";
   sudo ufw status;
+  textMagenta "----------------> CONFIG SUCCESS"
 }
 
 strLength(){

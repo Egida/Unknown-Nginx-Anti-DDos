@@ -13,14 +13,17 @@ runAntiDDos(){
     done
   BlockFireWall;
   fi
+  textMagenta "----------------> CONFIG SUCCESS"
 }
 
 SetAllowIP(){
   textGreen "----------------> SET ALLOW IP";
   sudo nano $APP_INSTALL/rule/IPGood.txt;
+  textMagenta "----------------> CONFIG SUCCESS"
 }
 UpdateFireWall(){
   textGreen "----------------> UPDATE FIREWALL";
   BlockFireWall;
   AllowIPFireWall;
+  textMagenta "----------------> CONFIG SUCCESS"
 }

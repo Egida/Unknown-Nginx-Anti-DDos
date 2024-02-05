@@ -7,11 +7,11 @@ isSearchEngine(){
 }
 
 BlockFireWall(){
-while read line; do sudo ufw deny from $line; done < $APP_INSTALL/rule/IPBad.txt
+while read line; do sudo ufw deny from $line &> /dev/null; done < $APP_INSTALL/rule/IPBad.txt
 }
 
 AllowIPFireWall(){
-  while read line; do sudo ufw delete deny from $line; done < $APP_INSTALL/rule/IPGood.txt
+  while read line; do sudo ufw delete deny from $line  &> /dev/null; done < $APP_INSTALL/rule/IPGood.txt
 }
 
 VerifyBadIP(){
