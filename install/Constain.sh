@@ -1,7 +1,7 @@
 #!/bin/bash
-export DIR_DATABASE_IP=/root/databaseIP.json
-export ALLOW_COUNTRY="Vietnam"
-export ALLOW_ASN="24086,7643,18403"
+export DIR_DATABASE_IP=/root/databaseIP.json;
+export ALLOW_COUNTRY="Vietnam";
+export ALLOW_ASN="24086 7643 18403";
 
 setVariablesSystem() {
   if [ -f ~/.constainUAD ]; then
@@ -11,8 +11,8 @@ setVariablesSystem() {
     chmod 777 ~/.constainUAD
     cat >~/.constainUAD <<EOF
 export DIR_DATABASE_IP=/root/databaseIP.json
-export ALLOW_COUNTRY='Vietnam'
-export ALLOW_ASN='24086,7643,18403'
+export ALLOW_COUNTRY="Vietnam"
+export ALLOW_ASN="24086 7643 18403"
 EOF
   fi
 }
@@ -43,8 +43,8 @@ configAntiDdos() {
 
   cat >~/.constain <<EOF
 export DIR_DATABASE_IP=$DIR_DATABASE_IP
-export ALLOW_COUNTRY=$ALLOW_COUNTRY'
-export ALLOW_ASN=$ALLOW_ASN
+export ALLOW_COUNTRY="$ALLOW_COUNTRY"
+export ALLOW_ASN="$ALLOW_ASN"
 EOF
 
   textMagenta "----------------> CONFIG SUCCESS"
