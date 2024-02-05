@@ -25,17 +25,26 @@ defaultAction() {
   textRed "----------------> PLEASE CHECK AGAIN"
   echo ''
 }
-
-
+backToMainScreen() {
+  NUMBER_ACTION=-1
+  echo ''
+}
 
 RunAction(){
+
     case $NUMBER_ACTION in
-    1) configAntiDdos ;;
-    2) enableUFW ;;
-    3) statusUFW ;;
-    4) runAntiDDos ;;
-    5) uninstallUnknownAD ;;
-    6) UpdateUnknownAD ;;
+    1) configAntiDdos
+      backToMainScreen;;
+    2) enableUFW
+      backToMainScreen;;
+    3) statusUFW
+      backToMainScreen;;
+    4) runAntiDDos
+      backToMainScreen;;
+    5) uninstallUnknownAD
+      backToMainScreen;;
+    6) UpdateUnknownAD
+      backToMainScreen;;
     *) defaultAction ;;
     esac
 
