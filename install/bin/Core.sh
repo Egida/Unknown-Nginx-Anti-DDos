@@ -27,9 +27,11 @@ killApt() {
   sudo rm /var/lib/dpkg/lock* &>/dev/null;
 }
 enableUFW(){
+    textGreen "----------------> ENABLE FIREWALL";
     sudo ufw enable;
 }
 statusUFW(){
+  textGreen "----------------> STATUS FIREWALL";
   sudo ufw status;
 }
 

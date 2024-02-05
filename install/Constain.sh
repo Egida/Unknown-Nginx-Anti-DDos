@@ -27,7 +27,7 @@ verifyUNKDDOS() {
 }
 
 configAntiDdos() {
-  echo "----------------> CONFIG UNKNOWN ANTI DDOS"
+  textGreen "----------------> CONFIG UNKNOWN ANTI DDOS"
 
   read -p "----------------> INPUT DIR DATABASE IP : " DIR_DATABASE_IP
 

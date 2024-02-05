@@ -1,4 +1,5 @@
 runAntiDDos(){
+  textGreen "----------------> SCAN IP ANTI DDOS";
   getIP=$(NginxIPAccess);
   if [[ $(strLength "$getIP") -gt 3 ]]; then
     for i in $getIP ; do
@@ -15,9 +16,11 @@ runAntiDDos(){
 }
 
 SetAllowIP(){
+  textGreen "----------------> SET ALLOW IP";
   sudo nano $APP_INSTALL/rule/IPGood.txt;
 }
 UpdateFireWall(){
+  textGreen "----------------> UPDATE FIREWALL";
   BlockFireWall;
   AllowIPFireWall;
 }
