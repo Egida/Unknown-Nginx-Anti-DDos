@@ -36,13 +36,13 @@ findStringInDatabase(){
   fi
 
   if [ isInFile == 1 ]; then
-    lineNum="$(grep -n $1 DATABASE_IP | head -n 1 | cut -d: -f1)"
+    Response="$(grep -n $1 DATABASE_IP | head -n 1 | cut -d: -f1)"
   fi
 
-  return Response;
+  return $Response;
 }
 
 
 NginxIPAccess(){
-  IPAccess=$(sudo awk '{print $1}' $LOG_NGINX/access.log)
+  return $(sudo awk '{print $1}' $LOG_NGINX/access.log)
 }
