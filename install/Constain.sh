@@ -1,7 +1,7 @@
 #!/bin/bash
 export DIR_DATABASE_IP=/root/databaseIP.json;
 export ALLOW_COUNTRY="Vietnam";
-export ALLOW_ASN="24086 7643 18403";
+export ALLOW_ASN="24086 7643 18403 7552 13335 131429 38247 45899 15169";
 
 setVariablesSystem() {
   if [ -f ~/.constainUAD ]; then
@@ -12,7 +12,7 @@ setVariablesSystem() {
     cat >~/.constainUAD <<EOF
 export DIR_DATABASE_IP=/root/databaseIP.json
 export ALLOW_COUNTRY="Vietnam"
-export ALLOW_ASN="24086 7643 18403"
+export ALLOW_ASN="24086 7643 18403 7552 13335 131429 38247 45899 15169"
 EOF
   fi
 }
