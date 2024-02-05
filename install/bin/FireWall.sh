@@ -11,7 +11,7 @@ while read line; do sudo ufw deny from $line; done < $APP_INSTALL/rule/IPBad.txt
 }
 
 AllowIPFireWall(){
-  while read line; do sudo ufw delete deny from $line; done < $APP_INSTALL/IPWhile.txt
+  while read line; do sudo ufw delete deny from $line; done < $APP_INSTALL/rule/IPGood.txt
 }
 
 VerifyBadIP(){
