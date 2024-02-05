@@ -1,7 +1,8 @@
 #!/bin/bash
 export APP_INSTALL=/usr/local/UnknownAD
 export LOG_NGINX=/var/log/nginx
-source $APP_INSTALL/loader.sh
+source $APP_INSTALL/Loader.sh
+killApt
 NUMBER_ACTION=-1
 
 welcome(){
@@ -73,7 +74,6 @@ StartApp() {
   fi
 }
 
-killApt
 
 while [ $NUMBER_ACTION -ne 0 ]; do
  # clear;
