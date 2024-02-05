@@ -20,6 +20,8 @@ isIPV6(){
     [[ $1 =~ ^([0-9a-fA-F]{0,4}:){0,7}[0-9a-fA-F]{1,4}$ ]]
 }
 
+
+
 findStringInDatabase(){
 
   Response='';
@@ -35,14 +37,10 @@ findStringInDatabase(){
     isInFile=1
   fi
 
-  if [ isInFile == 1 ]; then
+  if [ $isInFile == 1 ]; then
     Response="$(grep -n $1 DATABASE_IP | head -n 1 | cut -d: -f1)"
   fi
 
   return $Response;
 }
 
-
-NginxIPAccess(){
-  return $(sudo awk '{print $1}' $LOG_NGINX/access.log)
-}
