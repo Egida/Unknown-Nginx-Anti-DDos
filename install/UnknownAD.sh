@@ -33,8 +33,9 @@ RunAction(){
 
     case $NUMBER_ACTION in
     1) configAntiDdos ;;
-    2) uninstallUnknownAD ;;
-    3) UpdateUnknownAD ;;
+    2) runAntiDDos ;;
+    3) uninstallUnknownAD ;;
+    4) UpdateUnknownAD ;;
     *) defaultAction ;;
     esac
 
@@ -45,9 +46,10 @@ StartApp() {
   echo ""
   textRed "----------------> TOOL MANAGER"
   textGreen "0 ) Exit App.                                   1 ) Config Anti DDos."
+  textGreen "2 ) Scan Anti DDos."
   echo ''
   textRed "----------------> ABOUT TOOL"
-  textGreen "2 ) Uninstall Unknown DDOS.                     3 ) Update Unknown DDOS."
+  textGreen "3 ) Uninstall Unknown DDOS.                     4 ) Update Unknown DDOS."
   echo ''
   read -p "----------------> ENTER NUMBER ACTION : " NUMBER_ACTION
   echo ""
