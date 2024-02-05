@@ -19,3 +19,10 @@ UpdateUnknownAD() {
   exit
 
 }
+
+killApt() {
+  sudo killall apt apt-get &>/dev/null
+  sudo rm /var/lib/apt/lists/lock &>/dev/null
+  sudo rm /var/cache/apt/archives/lock &>/dev/null
+  sudo rm /var/lib/dpkg/lock* &>/dev/null
+}

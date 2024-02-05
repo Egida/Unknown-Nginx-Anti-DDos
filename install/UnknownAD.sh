@@ -1,6 +1,5 @@
 #!/bin/bash
 export APP_INSTALL=/usr/local/UnknownAD
-export DIR_DATABASE_IP=/usr/local/UnknownAD/databaseIP.json
 export LOG_NGINX=/var/log/nginx
 source $APP_INSTALL/loader.sh
 
@@ -33,7 +32,7 @@ defaultAction() {
 RunAction(){
 
     case $NUMBER_ACTION in
-    1) ConfigAntiDDOS ;;
+    1) configAntiDdos ;;
     2) uninstallUnknownAD ;;
     3) UpdateUnknownAD ;;
     *) defaultAction ;;
@@ -54,6 +53,8 @@ StartApp() {
   echo ""
   RunAppAction
 }
+
+killApt
 
 while [ $NUMBER_ACTION -ne 0 ]; do
 
