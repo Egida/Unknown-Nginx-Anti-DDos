@@ -29,4 +29,4 @@ rm -rf /root/Unknown-Nginx-Anti-DDos &> /dev/null
 
 echo "----------------> Install Success.Use command 'UnknownAD' for use.Thank you"
 
-cd /root || exit
+cd /home
