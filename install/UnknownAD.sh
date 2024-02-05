@@ -1,6 +1,6 @@
 #!/bin/bash
-export APP_INSTALL=/usr/local/UnknownDDOS
-export DIR_DATABASE_IP=/usr/local/UnknownDDOS/databaseIP.json
+export APP_INSTALL=/usr/local/UnknownAD
+export DIR_DATABASE_IP=/usr/local/UnknownAD/databaseIP.json
 export LOG_NGINX=/var/log/nginx
 source $APP_INSTALL/loader.sh
 
@@ -28,20 +28,14 @@ defaultAction() {
   echo ''
 }
 
-UninstallUnknownDDOS(){
 
-}
-
-UpdateUnknownDDOS(){
-  
-}
 
 RunAction(){
 
     case $NUMBER_ACTION in
     1) ConfigAntiDDOS ;;
-    2) UninstallUnknownDDOS ;;
-    3) UpdateUnknownDDOS ;;
+    2) uninstallUnknownAD ;;
+    3) UpdateUnknownAD ;;
     *) defaultAction ;;
     esac
 

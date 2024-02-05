@@ -18,5 +18,5 @@ Install command
 
 3. [ ] Step 3
 
-   use command `UnknownDDOS`
+   use command `UnknownAD`
 4. 

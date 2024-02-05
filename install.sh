@@ -13,22 +13,22 @@ echo "##########################################################################
 echo "";
 echo "----------------> INSTALL SETUP"
 
-rm -rf /usr/local/UnknownDDOS &> /dev/null
-
-mkdir -p /usr/local/UnknownDDOS &> /dev/null
-
-cp -rf install/* /usr/local/UnknownDDOS &> /dev/null
-
-chmod -R +x /usr/local/UnknownDDOS  &> /dev/null
-
-ln -s /usr/local/UnknownDDOS/UnknownDDOS.sh /usr/local/bin/UnknownDDOS &> /dev/null
-
-cd ../ || exit
-
-rm -rf Unknown-Nginx-Anti-DDos &> /dev/null
-
 cd /root || exit
 
-echo "----------------> Install Success.Use command 'UnknownDDOS' for use.Thank you"
+rm -rf /usr/local/UnknownAD &> /dev/null
 
-cd /home || exit
+mkdir -p /usr/local/UnknownAD &> /dev/null
+
+cp -rf install/* /usr/local/UnknownAD &> /dev/null
+
+chmod -R +x /usr/local/UnknownAD  &> /dev/null
+
+ln -s /usr/local/UnknownAD/UnknownAD.sh /usr/local/bin/UnknownAD &> /dev/null
+
+ln -s /usr/local/UnknownAD/UnknownADC.sh /usr/local/bin/UnknownADC &> /dev/null
+
+rm -rf /root/Unknown-Nginx-Anti-DDos &> /dev/null
+
+echo "----------------> Install Success.Use command 'UnknownAD' for use.Thank you"
+
+cd /root || exit
