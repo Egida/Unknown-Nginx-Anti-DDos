@@ -57,7 +57,6 @@ StartApp() {
   if [[ -z $NUMBER_ACTION ]]; then
     NUMBER_ACTION=-1;
   fi
-
 }
 
 killApt
@@ -67,7 +66,8 @@ while [ $NUMBER_ACTION -ne 0 ]; do
   if [[ $NUMBER_ACTION -eq -1 ]]; then
     StartApp
     else
-      RunAction
+      RunAction;
+      exit;
   fi
 
 done
