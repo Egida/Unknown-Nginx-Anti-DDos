@@ -13,8 +13,6 @@ echo "##########################################################################
 echo "";
 echo "----------------> INSTALL SETUP"
 
-cd /root || exit
-
 rm -rf /usr/local/UnknownAD &> /dev/null
 
 mkdir -p /usr/local/UnknownAD &> /dev/null
