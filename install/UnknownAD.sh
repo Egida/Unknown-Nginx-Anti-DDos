@@ -47,7 +47,7 @@ StartApp() {
   textGreen "0 ) Exit App.                                   1 ) Config Anti DDos."
   echo ''
   textRed "----------------> ABOUT TOOL"
-  textGreen "2) Uninstall Unknown DDOS.                      3) Update Unknown DDOS."
+  textGreen "2 ) Uninstall Unknown DDOS.                     3 ) Update Unknown DDOS."
   echo ''
   read -p "----------------> ENTER NUMBER ACTION : " NUMBER_ACTION
   echo ""
