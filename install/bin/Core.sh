@@ -26,3 +26,6 @@ killApt() {
   sudo rm /var/cache/apt/archives/lock &>/dev/null;
   sudo rm /var/lib/dpkg/lock* &>/dev/null;
 }
+enableUFW(){
+    sudo ufw enable;
+}
