@@ -1,14 +1,4 @@
 #!/bin/bash
-strLength(){
-  string=$1;
-  echo "${#string}";
-}
-strPos() {
-  haystack=$1
-  needle=$2
-  x="${haystack%%"$needle"*}"
-  [[ "$x" = "$haystack" ]] && { echo -1; return 1; } || echo "${#x}"
-}
 
 isIPV4(){
   if [[ $1 =~ [0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3} ]]; then

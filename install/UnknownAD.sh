@@ -41,13 +41,16 @@ RunAction(){
       backToMainScreen;;
     4) runAntiDDos
       backToMainScreen;;
-    5) uninstallUnknownAD
+    5) SetAllowIP
       backToMainScreen;;
-    6) UpdateUnknownAD
+     6) UpdateFireWall
+        backToMainScreen;;
+    7) uninstallUnknownAD
+      backToMainScreen;;
+    8) UpdateUnknownAD
       backToMainScreen;;
     *) defaultAction ;;
     esac
-
 }
 
 StartApp() {
@@ -56,10 +59,11 @@ StartApp() {
   textRed "----------------> TOOL MANAGER"
   textGreen "0 ) Exit App.                                   1 ) Config Anti DDos."
   textGreen "2 ) Enable FireWall.                            3 ) Status FireWall."
-  textGreen "4 ) Run Anti DDos"
+  textGreen "4 ) Run Anti DDos                               5 ) Config IP Allow"
+  textGreen "6 ) Update FireWall"
   echo ''
   textRed "----------------> ABOUT TOOL"
-  textGreen "5 ) Uninstall Unknown DDOS.                     6 ) Update Unknown DDOS."
+  textGreen "7 ) Uninstall Unknown DDOS.                     8 ) Update Unknown DDOS."
   echo ''
   read -p "----------------> ENTER NUMBER ACTION : " NUMBER_ACTION
   echo ""

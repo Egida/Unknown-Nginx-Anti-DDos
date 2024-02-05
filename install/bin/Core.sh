@@ -32,3 +32,14 @@ enableUFW(){
 statusUFW(){
   sudo ufw status;
 }
+
+strLength(){
+  string=$1;
+  echo "${#string}";
+}
+strPos() {
+  haystack=$1
+  needle=$2
+  x="${haystack%%"$needle"*}"
+  [[ "$x" = "$haystack" ]] && { echo -1; return 1; } || echo "${#x}"
+}
