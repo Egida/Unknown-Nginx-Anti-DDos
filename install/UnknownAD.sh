@@ -3,8 +3,6 @@ export APP_INSTALL=/usr/local/UnknownAD
 export LOG_NGINX=/var/log/nginx
 source $APP_INSTALL/loader.sh
 
-cd /root || exit
-
 NUMBER_ACTION=-1
 
 welcome(){

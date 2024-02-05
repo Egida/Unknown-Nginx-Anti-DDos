@@ -17,7 +17,7 @@ rm -rf /usr/local/UnknownAD &> /dev/null
 
 mkdir -p /usr/local/UnknownAD &> /dev/null
 
-cp -rf install/* /usr/local/UnknownAD &> /dev/null
+cp -rf /root/Unknown-Nginx-Anti-DDos/install/* /usr/local/UnknownAD &> /dev/null
 
 chmod -R +x /usr/local/UnknownAD  &> /dev/null
 
@@ -29,4 +29,4 @@ rm -rf /root/Unknown-Nginx-Anti-DDos &> /dev/null
 
 echo "----------------> Install Success.Use command 'UnknownAD' for use.Thank you"
 
-cd /home
+cd /root || exit
