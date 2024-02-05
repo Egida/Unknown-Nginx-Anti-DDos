@@ -4,9 +4,6 @@ export LOG_NGINX=/var/log/nginx
 source $APP_INSTALL/loader.sh
 
 NUMBER_ACTION=-1
-if [[ -z $NUMBER_ACTION ]]; then
-  NUMBER_ACTION=-1;
-fi
 
 welcome(){
 
@@ -54,6 +51,11 @@ StartApp() {
   echo ''
   read -p "----------------> ENTER NUMBER ACTION : " NUMBER_ACTION
   echo ""
+
+  if [[ -z $NUMBER_ACTION ]]; then
+    NUMBER_ACTION=-1;
+  fi
+
 }
 
 killApt
