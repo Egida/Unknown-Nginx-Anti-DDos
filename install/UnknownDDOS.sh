@@ -28,10 +28,20 @@ defaultAction() {
   echo ''
 }
 
+UninstallUnknownDDOS(){
+
+}
+
+UpdateUnknownDDOS(){
+  
+}
+
 RunAction(){
 
     case $NUMBER_ACTION in
     1) ConfigAntiDDOS ;;
+    2) UninstallUnknownDDOS ;;
+    3) UpdateUnknownDDOS ;;
     *) defaultAction ;;
     esac
 
