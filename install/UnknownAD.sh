@@ -61,7 +61,7 @@ StartApp() {
 killApt
 
 while [ $NUMBER_ACTION -ne 0 ]; do
-
+  clear;
   if [[ $NUMBER_ACTION -eq -1 ]]; then
     StartApp
     else
