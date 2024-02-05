@@ -29,13 +29,13 @@ defaultAction() {
 
 
 RunAction(){
-
     case $NUMBER_ACTION in
     1) configAntiDdos ;;
     2) enableUFW ;;
-    3) runAntiDDos ;;
-    4) uninstallUnknownAD ;;
-    5) UpdateUnknownAD ;;
+    3) statusUFW ;;
+    4) runAntiDDos ;;
+    5) uninstallUnknownAD ;;
+    6) UpdateUnknownAD ;;
     *) defaultAction ;;
     esac
 
@@ -46,10 +46,11 @@ StartApp() {
   echo ""
   textRed "----------------> TOOL MANAGER"
   textGreen "0 ) Exit App.                                   1 ) Config Anti DDos."
-  textGreen "2 ) Enable FireWall.                            3 ) Run Anti DDos."
+  textGreen "2 ) Enable FireWall.                            3 ) Status FireWall."
+  textGreen "4 ) Run Anti DDos"
   echo ''
   textRed "----------------> ABOUT TOOL"
-  textGreen "4 ) Uninstall Unknown DDOS.                     5 ) Update Unknown DDOS."
+  textGreen "5 ) Uninstall Unknown DDOS.                     6 ) Update Unknown DDOS."
   echo ''
   read -p "----------------> ENTER NUMBER ACTION : " NUMBER_ACTION
   echo ""
@@ -67,7 +68,6 @@ while [ $NUMBER_ACTION -ne 0 ]; do
     StartApp
     else
       RunAction;
-      exit;
   fi
 
 done

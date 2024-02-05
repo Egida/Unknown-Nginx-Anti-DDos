@@ -28,4 +28,9 @@ killApt() {
 }
 enableUFW(){
     sudo ufw enable;
+    exit;
+}
+statusUFW(){
+  sudo ufw status;
+  exit;
 }
