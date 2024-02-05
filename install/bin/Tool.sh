@@ -11,7 +11,7 @@ runAntiDDos(){
         fi
       fi
     done
-  BlockFireWall;
+  UpdateFireWall;
   fi
   textMagenta "----------------> CONFIG SUCCESS"
 }
